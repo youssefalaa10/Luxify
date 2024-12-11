@@ -19,3 +19,6 @@ body {
   background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+#__next {
+  height: calc(100% - 74px);
+}

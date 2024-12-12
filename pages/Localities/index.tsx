@@ -1,13 +1,14 @@
 import FilteringBar from "@/components/Localities/filtering";
 import PriceSlider from "@/components/Localities/PriceRange";
 import PropertiesList from "@/components/Localities/PropertiesList";
+import SinglePropertyCard from "@/components/Localities/singlePropertyCard";
 import React from "react";
 
 function Localities() {
   return (
     <div className="h-full">
       <div className="flex flex-1 h-full text-black w-full">
-        <aside className="w-[280px] bg-transparent p-4 h-full border-r border-[#d1d1d1]">
+        <aside className="w-[350px] bg-transparent p-4 h-full border-r border-[#d1d1d1] px-10">
           <h2 className="text-xl font-semibold mb-4">Filters</h2>
           <div className="h-[95%] flex flex-col justify-between">
             <FilteringBar />
@@ -110,9 +111,10 @@ function Localities() {
 
           </div>
         </main> */}
-        <div className=" w-[30%]">
+        <div className=" w-[33%]">
           <PropertiesList />
         </div>
+        <SinglePropertyCard />
         {/* <aside className="w-1/3 bg-gray-700 p-4">
           <div className="space-y-4">
             <h3 className="text-xl font-semibold mb-2">LaQue House</h3>

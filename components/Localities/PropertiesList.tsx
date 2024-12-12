@@ -46,7 +46,7 @@ const PropertiesList: React.FC = () => {
   ];
 
   return (
-    <div className="h-full bg-transparent w-full p-4 mx-10">
+    <div className="h-full bg-transparent  p-4 ml-4 ">
       <h1 className="text-3xl font-bold mb-6 text-start">Property Listings</h1>
       <div className="h-[calc(100vh-200px)] overflow-y-scroll">
         <div className="flex flex-col justify-between">

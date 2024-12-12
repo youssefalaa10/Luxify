@@ -1,10 +1,10 @@
 import React from "react";
 function FilteringBar() {
   return (
-    <div className="w-[250px] text-black ">
-      <div>
-        <h2 className="mb-2">Property type</h2>
-        <div className="grid grid-cols-2 grid-rows-2 gap-2">
+    <div className="w-[270px] text-black ">
+      <div className="w-full">
+        <h2 className="mb-5">Property type</h2>
+        <div className="grid grid-cols-2 grid-rows-2 gap-4">
           <div className="w-[110px] h-[60px] bg-white rounded-md flex flex-col items-center justify-around">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,13 +1,14 @@
-// import HomePage from "./Home";
-import Login from "./Login";
-// import Register from "./Register";
+import HomePage from "./Home";
+
+
 
 
 export default function Home() {
+
   return (
     <div>
-      {/* <HomePage/> */}
-      <Login/>
+      <HomePage/>
+      
     </div>
   );
 }

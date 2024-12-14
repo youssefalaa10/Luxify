@@ -49,7 +49,10 @@ const SinglePropertyCard = () => {
       </div>
 
       {/* Details */}
-      <div className="p-6">
+      <div
+        className="p-6  flex flex-col justify-between "
+        style={{ height: "calc(100% - 400px)" }}
+      >
         <div className="w-full flex justify-between">
           <div className="">
             <h2 className="text-2xl font-semibold mb-2">LaQue House</h2>

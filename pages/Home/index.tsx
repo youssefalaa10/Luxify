@@ -1,6 +1,7 @@
 import Header from "@/components/Home/Header";
 import HeroSection from "@/components/Home/Hero";
 import PropertyProcess from "@/components/Home/property-process";
+import WhatWeDo from "@/components/Home/we-do";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Header />
       <HeroSection />
       <PropertyProcess />
+      <WhatWeDo/>
     </div>
   );
 };

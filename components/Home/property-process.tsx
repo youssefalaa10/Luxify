@@ -47,7 +47,7 @@ const PropertyProcess: React.FC = () => {
   ];
 
   return (
-    <section className="relative mt-20 mb-20  py-24">
+    <section className="relative mt-20 mb-14 pt-20">
         <h4 className="font-[900] text-[35px] text-center lg:mb-24">
           Property Selection Process
         </h4> 

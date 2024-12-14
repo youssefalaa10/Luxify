@@ -1,7 +1,7 @@
 import ImageSection from "@/components/Auth/image-section";
-import AuthForm from "@/components/Auth/register-form";
+import LoginForm from "@/components/Auth/login-form";
 
-const Register = () => {
+const Login = () => {
   return (
     <div className="flex min-h-screen">
       {/* Image Section */}
@@ -11,10 +11,10 @@ const Register = () => {
 
       {/* Form Section */}
       <div className="flex-1 flex items-center justify-center p-6 bg-white">
-        <AuthForm />
+        <LoginForm />
       </div>
     </div>
   );
 };
 
-export default Register;
+export default Login;

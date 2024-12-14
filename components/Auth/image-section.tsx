@@ -1,9 +1,12 @@
 import Image from "next/image";
 import saopaulo from "@/public/saopaulo.jpg";
+import { useRouter } from "next/router";
 
 const ImageSection = () => {
+  const router = useRouter();
+
   return (
-    <div className="relative h-full w-full ">
+    <div className="relative h-full w-full">
       {/* Background Image */}
       <Image
         src={saopaulo}
@@ -14,7 +17,10 @@ const ImageSection = () => {
       />
 
       {/* Back Button */}
-      <button className="absolute top-6 left-6 px-4 py-2 text-sm text-white bg-gray-700/50 rounded-lg hover:bg-gray-600/50 z-10">
+      <button
+        onClick={() => router.push("/")}
+        className="absolute top-6 left-6 px-4 py-2 text-sm text-white bg-gray-700/50 rounded-lg hover:bg-gray-600/50 z-10"
+      >
         Back to website
       </button>
 

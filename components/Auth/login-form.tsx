@@ -1,34 +1,28 @@
 import { useRouter } from "next/router";
 import { FaGoogle, FaApple } from "react-icons/fa";
 
-const AuthForm = () => {
+const LoginForm = () => {
   const router = useRouter();
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Add login logic here
+    router.push("/");
+  };
 
   return (
     <div className="flex flex-col items-center justify-center w-full max-w-md space-y-6">
-      <h2 className="text-2xl font-bold">Create an account</h2>
+      <h2 className="text-2xl font-bold">Log in to your account</h2>
       <p className="text-sm text-gray-400">
-        Already have an account?{" "}
+        Don’t have an account?{" "}
         <a
-          onClick={() => router.push("/Login")}
+          onClick={() => router.push("/Register")}
           className="text-indigo-500 hover:underline cursor-pointer"
         >
-          Log in
+          Register
         </a>
       </p>
-      <form className="w-full space-y-4">
-        <div className="flex space-x-4">
-          <input
-            type="text"
-            placeholder="First name"
-            className="w-1/2 px-4 py-2 text-sm text-gray-900 bg-gray-200 rounded-lg"
-          />
-          <input
-            type="text"
-            placeholder="Last name"
-            className="w-1/2 px-4 py-2 text-sm text-gray-900 bg-gray-200 rounded-lg"
-          />
-        </div>
+      <form onSubmit={handleLogin} className="w-full space-y-4">
         <input
           type="email"
           placeholder="Email"
@@ -42,25 +36,16 @@ const AuthForm = () => {
           />
           <span className="absolute right-4 top-2.5 text-gray-600 cursor-pointer">👁️</span>
         </div>
-        <div className="flex items-center">
-          <input type="checkbox" className="mr-2" />
-          <p className="text-sm text-gray-400">
-            I agree to the{" "}
-            <a href="#" className="text-indigo-500 hover:underline">
-              Terms & Conditions
-            </a>
-          </p>
-        </div>
         <button
           type="submit"
           className="w-full px-4 py-2 text-white bg-indigo-500 rounded-lg hover:bg-indigo-600"
         >
-          Create account
+          Log in
         </button>
       </form>
       <div className="flex items-center w-full space-x-4">
         <hr className="w-full border-gray-600" />
-        <span className="w-full text-sm text-gray-400">Or register with</span>
+        <span className="w-full text-sm text-gray-400">Or log in with</span>
         <hr className="w-full border-gray-600" />
       </div>
       <div className="flex space-x-4">
@@ -77,4 +62,4 @@ const AuthForm = () => {
   );
 };
 
-export default AuthForm;
+export default LoginForm;

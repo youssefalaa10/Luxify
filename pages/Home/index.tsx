@@ -3,6 +3,7 @@ import HeroSection from "@/components/Home/Hero";
 import Localities from "@/components/Home/Localities";
 import PropertyProcess from "@/components/Home/property-process";
 import WhatWeDo from "@/components/Home/we-do";
+import AboutUs from "../../components/Home/AboutUs";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <PropertyProcess />
       <WhatWeDo/>
       <Localities />
+      <AboutUs/>
     </div>
   );
 };

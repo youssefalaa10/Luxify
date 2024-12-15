@@ -1,5 +1,6 @@
 import Header from "@/components/Home/Header";
 import HeroSection from "@/components/Home/Hero";
+import Localities from "@/components/Home/Localities";
 import PropertyProcess from "@/components/Home/property-process";
 import WhatWeDo from "@/components/Home/we-do";
 
@@ -10,6 +11,7 @@ const HomePage = () => {
       <HeroSection />
       <PropertyProcess />
       <WhatWeDo/>
+      <Localities />
     </div>
   );
 };

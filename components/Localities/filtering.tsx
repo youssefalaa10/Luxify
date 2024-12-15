@@ -1,8 +1,8 @@
 import React from "react";
 function FilteringBar() {
   return (
-    <div className="w-[270px] text-black ">
-      <div className="w-full">
+    <div className="min-w-[200px] text-black mx-auto">
+      <div className="w-full m-auto">
         <h2 className="mb-5">Property type</h2>
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
           <div className="w-[110px] h-[60px] bg-white rounded-md flex flex-col items-center justify-around">

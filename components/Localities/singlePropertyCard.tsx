@@ -10,7 +10,7 @@ import {
 const SinglePropertyCard = () => {
   return (
     <div
-      className=" mx-auto bg-white shadow-lg overflow-hidden border border-gray-200 p-5"
+      className=" mx-auto bg-white shadow-lg overflow-hidden border border-gray-200 p-5 hidden lg:block"
       style={{ width: "calc(70% - 400px)" }}
     >
       <div className="grid grid-cols-1 md:grid-cols-3">
@@ -90,22 +90,26 @@ const SinglePropertyCard = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4 border-t pt-4 mt-4">
-          <img
-            src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Michael Joseph"
-            className="w-12 h-12 rounded-full border"
-          />
-          <div>
-            <p className="font-semibold">Michael Joseph</p>
-            <p className="text-gray-500 text-sm">4.8 (15 reviews)</p>
+        <div className="flex items-center gap-4 border-t pt-4  justify-between">
+          <div className="w-[210px] flex justify-between">
+            <img
+              src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Michael Joseph"
+              className="w-12 h-12 rounded-full border"
+            />
+            <div className="text-center">
+              <p className="font-semibold">Michael Joseph</p>
+              <p className="text-gray-500 text-sm">4.8 (15 reviews)</p>
+            </div>
           </div>
-          <button className="ml-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500">
-            Contact
-          </button>
-          <button className="bg-gray-200 text-gray-600 px-4 py-2 rounded-lg hover:bg-gray-300">
-            Email
-          </button>
+          <div className="flex lg:flex-col xl:flex-row justify-between lg:w-[80px] xl:w-[220px] lg:h-24 xl:h-auto">
+            <button className=" bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500">
+              Contact
+            </button>
+            <button className="bg-gray-200 text-gray-600 px-4 py-2 rounded-lg hover:bg-gray-300">
+              Email
+            </button>
+          </div>
         </div>
       </div>
     </div>

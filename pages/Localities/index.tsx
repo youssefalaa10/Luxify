@@ -7,13 +7,15 @@ import React from "react";
 function Localities() {
   return (
     <div className="h-full">
-      <div className="flex flex-1 h-full text-black w-full">
-        <aside className="w-[350px] bg-transparent p-4 h-full border-r border-[#d1d1d1] px-10">
-          <h2 className="text-xl font-semibold mb-4">Filters</h2>
-          <div className="h-[95%] flex flex-col justify-between">
+      <div className="flex flex-1 sm:flex-row flex-col h-full text-black w-full">
+        <aside className="xl:w-[20%] lg:w-1/4 md:w-1/2 bg-transparent h-full border-r border-[#d1d1d1] ">
+          <h2 className="text-xl font-semibold mb-4 mx-auto mt-2 w-[68%]">
+            Filters
+          </h2>
+          <div className="h-[95%] flex flex-col justify-between m-auto">
             <FilteringBar />
 
-            <div className="w-[250px]">
+            <div className="w-[70%] m-auto">
               <label className="block mb-2">Location</label>
               <div className="relative flex items-center">
                 <input
@@ -50,7 +52,7 @@ function Localities() {
 
             <PriceSlider />
 
-            <div>
+            <div className="w-[70%] m-auto">
               <label className="block mb-1">Rooms</label>
 
               <div className="flex justify-between p-1">
@@ -69,7 +71,7 @@ function Localities() {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="w-[70%] m-auto mt-8">
               <label className="block mb-2">Additional conveniences</label>
               <div className="flex flex-col space-y-2">
                 <label className="flex items-center">
@@ -111,7 +113,7 @@ function Localities() {
 
           </div>
         </main> */}
-        <div className=" w-[33%]">
+        <div className=" xl:w-[37%] lg:w-[46%]">
           <PropertiesList />
         </div>
         <SinglePropertyCard />

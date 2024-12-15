@@ -20,9 +20,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   image,
 }) => {
   return (
-    <div className="flex bg-white rounded-lg shadow-md overflow-hidden max-w-3xl my-2 h-[210px] mr-4">
+    <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden max-w-3xl my-2 xl:h-[220px]  mr-4">
       {/* Image Section */}
-      <div className="w-2/5 p-4">
+      <div className="md:w-2/5 w-full p-4">
         <img
           src={image}
           alt={title}
@@ -31,15 +31,15 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
       </div>
 
       {/* Details Section */}
-      <div className="p-4 w-[50%] h-full flex flex-col justify-between ">
+      <div className="p-4 md:w-2/4 w-full h-full flex flex-col justify-between ">
         <h3 className="text-blue-500 text-2xl font-semibold mb-1">
           ${price} <span className=" font-normal text-gray-500">/ month</span>
         </h3>
         <p className="text-black font-bold text-lg ">{title}</p>
         <p className="text-gray-400 text-md mb-4">{address}</p>
-        <div className="flex text-sm text-gray-700 flex-wrap gap-1 h-[60px]">
+        <div className="flex justify-between md:justify-start  text-sm text-gray-700 flex-wrap gap-1 h-[60px] items-center">
           {/* Bedrooms */}
-          <div className="flex items-center gap-1 rounded-lg bg-slate-200 w-24">
+          <div className="flex items-center gap-1 rounded-lg bg-slate-200 w-20 max-h-8 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -57,7 +57,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             {bedrooms} Beds
           </div>
           {/* Area */}
-          <div className="flex items-center gap-1 rounded-lg bg-slate-200 w-24">
+          <div className="flex items-center gap-1 rounded-lg bg-slate-200 w-20 max-h-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -75,7 +75,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             {area} m²
           </div>
           {/* Garages */}
-          <div className="flex items-center gap-1 rounded-lg bg-slate-200 w-24">
+          <div className="flex items-center gap-1 rounded-lg bg-slate-200 w-24 max-h-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -92,9 +92,24 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             </svg>
             {garages} Garage
           </div>
+          <div className="py-5 md:hidden block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              width="24"
+              height="24"
+            >
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
         </div>
       </div>
-      <div className="py-5">
+      <div className="py-5 hidden md:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

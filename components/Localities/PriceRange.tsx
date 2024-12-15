@@ -54,7 +54,7 @@ const PriceSlider: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center mb-8 ">
+      <div className="flex flex-col items-center mb-8 w-[70%] m-auto">
         <h2 className="w-full">Price Range</h2>
         {/* Double Value Slider */}
 
